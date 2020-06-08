@@ -26,15 +26,18 @@ h2 {
 }
 
 h3 {
-    color: #777;
+    color: #ddd;
     display: inline;
     font-size: 14px;
-    text-shadow: 1px 1px 1px #fff;
+    text-shadow: none;
     animation-name: onhover;
-    animation-duration: 2s;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    font-weight: bolder
 }
 
 @keyframes onhover {
-    from { color: #777;  }
-    to { color: #000; }
+    from { color: #ddd; text-shadow:none; }
+    to { color: #777; text-shadow: 1px 1px 1px #fff; }
 }
