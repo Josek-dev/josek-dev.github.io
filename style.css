@@ -8,23 +8,33 @@ body {
     margin: auto;
     text-align: center;
     padding: 20% 0;
+    font-family: Lato, Helvetica, sans-serif;
 }
 
 h1 {
+    color: #333;
+    font-size: 36px;
+    text-shadow: 1px 1px 0px #FFF;
+    margin: 0;
+}
+
+h2 {
+    font-size: 12px;
+    margin: 0;
+    color: #999;
+    text-shadow: 1px 1px 2px #FFF;
+}
+
+h3 {
+    color: #777;
     display: inline;
-    color: #555;
-    font-size: 24px;
-    font-family: Lato, Helvetica, sans-serif;
+    font-size: 14px;
     text-shadow: 1px 1px 1px #fff;
-    border-bottom: 0;
+    animation-name: onhover;
+    animation-duration: 2s;
 }
 
 @keyframes onhover {
-    from { color: #555; border-bottom: 0; }
-    to { color: #000; border-bottom: 1px solid #fff; }
-}
-
-h1:hover {
-    animation-name: onhover;
-    animation-duration: 2s;
+    from { color: #777;  }
+    to { color: #000; }
 }
