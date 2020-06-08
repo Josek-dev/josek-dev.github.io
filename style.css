@@ -5,7 +5,7 @@ body {
 }
 
 #frontpage {
-    margin: 0 auto;
+    margin: auto;
     text-align: center;
 }
 
@@ -14,4 +14,14 @@ h1 {
     font-size: 24px;
     font-family: Lato, Helvetica, sans-serif;
     text-shadow: 1px 1px 1px #fff;
+}
+
+@keyframes onhover {
+    from { color: #555; }
+    to { color: #000; }
+}
+
+h1:hover {
+    animation-name: onhover;
+    animation-duration: 2s;
 }
