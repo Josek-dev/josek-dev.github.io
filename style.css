@@ -7,18 +7,21 @@ body {
 #frontpage {
     margin: auto;
     text-align: center;
+    padding: 20% 0;
 }
 
 h1 {
+    display: inline;
     color: #555;
     font-size: 24px;
     font-family: Lato, Helvetica, sans-serif;
     text-shadow: 1px 1px 1px #fff;
+    border-bottom: 0;
 }
 
 @keyframes onhover {
-    from { color: #555; }
-    to { color: #000; }
+    from { color: #555; border-bottom: 0; }
+    to { color: #000; border-bottom: 1px solid #fff; }
 }
 
 h1:hover {
