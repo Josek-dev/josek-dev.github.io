@@ -4,6 +4,11 @@ body {
     background: #dddddd;
 }
 
+#frontpage {
+    margin: 0 auto;
+    text-align: center;
+}
+
 h1 {
     color: #555;
     font-size: 24px;
