@@ -2,13 +2,13 @@ body {
     margin: 0;
     padding: 0;
     background: #dddddd;
+    font-family: Lato, Helvetica, sans-serif;
 }
 
 #frontpage {
     margin: auto;
     text-align: center;
-    padding: 20% 0;
-    font-family: Lato, Helvetica, sans-serif;
+    padding-top: 20%;
 }
 
 h1 {
@@ -34,10 +34,46 @@ h3 {
     animation-duration: 5s;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-    font-weight: bolder
+    font-weight: bolder;
+    clear:both;
 }
 
 @keyframes onhover {
     from { color: #ddd; text-shadow:none; }
     to { color: #777; text-shadow: 1px 1px 1px #fff; }
+}
+
+#contact {
+    margin: 0 auto;
+    text-align: center;
+}
+
+h4 {
+    margin: 5px 0;
+    color: #777;
+    font-weight: 500;
+    letter-spacing: 0.1pt;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+ul { 
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+li {
+    display:inline;
+    padding: 0 5px;
+}
+
+li i {
+    color: #777;
+}
+
+li i:hover {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
 }
