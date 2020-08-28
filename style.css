@@ -8,13 +8,13 @@ body {
 #frontpage {
     margin: auto;
     text-align: center;
-    padding-top: 20%;
+    padding-top: 10%;
 }
 
 h1 {
     color: #333;
     font-size: 36px;
-    text-shadow: 1px 1px 0px #FFF;
+    text-shadow: 1px 1px 0 #FFF;
     margin: 0;
 }
 
@@ -77,3 +77,80 @@ li i:hover {
 a {
     text-decoration: none;
 }
+
+#enter {
+    margin: 10px auto;
+    background: url('enter.png');
+    background-size: cover;
+    width: 89px;
+    height: 89px;
+    filter: grayscale(50%);
+    opacity: 0.5;
+    transition: all 2s ease;
+    display: block;
+    cursor: pointer;
+}
+
+#enter a {
+    display: block;
+    text-align: center;
+    line-height: 89px;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: "Myriad Pro Semibold", sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px #fff;
+    transition: 2s all;
+}
+
+#enter:hover {
+    filter: grayscale(0);
+    opacity: 1;
+    transform: rotate(2turn);
+}
+
+#error {
+    display: none;
+    background: linear-gradient(90deg, rgba(253, 253, 253, 0.7) 0%, rgba(229, 229, 229, 0.7) 9.27%, rgba(168, 168, 168, 0.7) 28.76%, rgba(167, 167, 167, 0.7) 28.96%, rgba(170, 170, 170, 0.7) 29.63%, rgba(213, 213, 213, 0.7) 42.2%, rgba(239, 239, 239, 0.7) 52.01%, rgba(249, 249, 249, 0.7) 57.8%, rgba(243, 243, 243, 0.7) 62.13%, rgba(226, 226, 226, 0.7) 67.91%, rgba(198, 198, 198, 0.7) 74.48%, rgba(167, 167, 167, 0.7) 80.43%, rgba(173, 173, 173, 0.7) 81.56%, rgba(217, 217, 217, 0.7) 89.78%, rgba(243, 243, 243, 0.7) 96.21%, rgba(253, 253, 253, 0.7) 100%), rgba(255,0,0,0.2);
+    border-radius : 10px 50px;
+    border: 1px solid rgba(229, 229, 229, 1);
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    width: 25vw;
+    height: 30px;
+    margin: 0 auto;
+    transition: 2s all;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+#error:hover {
+    background: linear-gradient(90deg, rgba(253, 253, 253, 0.7) 0%, rgba(229, 229, 229, 0.7) 9.27%, rgba(168, 168, 168, 0.7) 28.76%, rgba(167, 167, 167, 0.7) 28.96%, rgba(170, 170, 170, 0.7) 29.63%, rgba(213, 213, 213, 0.7) 42.2%, rgba(239, 239, 239, 0.7) 52.01%, rgba(249, 249, 249, 0.7) 57.8%, rgba(243, 243, 243, 0.7) 62.13%, rgba(226, 226, 226, 0.7) 67.91%, rgba(198, 198, 198, 0.7) 74.48%, rgba(167, 167, 167, 0.7) 80.43%, rgba(173, 173, 173, 0.7) 81.56%, rgba(217, 217, 217, 0.7) 89.78%, rgba(243, 243, 243, 0.7) 96.21%, rgba(253, 253, 253, 0.7) 100%), rgba(250,0,80,0.4);
+    width: 30vw;
+}
+
+#error p {
+    text-align: center;
+    margin: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Roboto Medium", "Futura Bk BT", sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image:  linear-gradient(to top, #3C1414 0%, #2D0505 100%);
+    text-shadow: 1px 1px 1px rgba(255,255,255,.4);
+    font-size: 14px;
+}
+@keyframes rainbow {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 25%}
+    100%{background-position:0% 50%}
+}
+
+hr {
+    border: 0;
+    background-image: repeating-linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    height: 2px;
+    animation: rainbow 20s ease infinite;
+    background-size: 800% 800%;
+}
+
