@@ -1,6 +1,6 @@
 jQuery.fn.extend({
     toggleText: function (a, b) {
-        let toggle = false, that = this;
+        var toggle = false, that = this;
         this.on('click', function () {
             that.text((toggle = !toggle) ? b : a);
         });
