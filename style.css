@@ -144,7 +144,7 @@ a {
 
 #info p span {
     padding-bottom: 2px;
-    border: 1px dashed #fff;
+    border-bottom: 1px dashed rgba(255,255,255,.4);
 }
 
 @keyframes rainbow {
