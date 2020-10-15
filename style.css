@@ -79,6 +79,8 @@ a {
 }
 
 #enter {
+    width: 89px;
+    height: 89px;
     margin: 10px auto;
     background: url('enter.png');
     background-size: cover;
@@ -139,6 +141,7 @@ a {
     text-shadow: 1px 1px 1px rgba(255,255,255,.4);
     font-size: 14px;
 }
+
 @keyframes rainbow {
     0%{background-position:0 50%}
     50%{background-position:100% 25%}
