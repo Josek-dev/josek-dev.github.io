@@ -142,6 +142,10 @@ a {
     font-size: 14px;
 }
 
+#info p span {
+    text-decoration: dashed;
+}
+
 @keyframes rainbow {
     0%{background-position:0 50%}
     50%{background-position:100% 25%}
